@@ -1,18 +1,35 @@
 <!DOCTYPE html>
+<style>
+	/* remove margin and set height to fill the whole window */
+	#body_margin {
+		margin: 0;
+		height: 100%;
+	}
+	
+	/* set flexbox container to vertically spread content evenly */
+	.fill_vertically {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: 100vh;
+	}
+</style>
 <html lang="en">
 	<head>
 		<title>Google</title>
 	</head>
 	<body id="body_margin">
-		<nav>
-			About
-		</nav>
-		<main>
-			<img src="google_logo.png" alt="google homepage image">
-			<input type="text">
-		</main>
-		<footer>
-			Advertising
-		</footer>
+		<div class="fill_vertically">
+			<nav>
+				About
+			</nav>
+			<main>
+				<img src="google_logo.png" alt="google homepage image">
+				<input type="text">
+			</main>
+			<footer>
+				Advertising
+			</footer>
+		</div>
 	</body>
 </html>
